@@ -1,0 +1,25 @@
+Question 1: Which is a better sorting algorithm — merge sort or quicksort ?
+
+Answer: 
+There’s no definite answer to this question. It really depends on the kind of 
+data we want to sort and what kind of sorting we expect. Both the algorithms 
+have their advantages and disadvantages.
+
+Let’s just go through some scenarios for better understanding:
+
+1?  If we want the relative order of equal elements after sorting the data 
+    to be preserved, merge sort would be the preferred choice since merge 
+    sort is a stable sorting algorithm while quicksort isn’t. Although 
+    quicksort can be modified to be stable, it is hard to implement and 
+    reduces the algorithm’s efficiency.
+
+2>  If the cost of allocating new memory is very high, we should always 
+    prefer quicksort since it is an in-place sorting algorithm while 
+    merge sort requires additional memory. Although merge sort can be 
+    modified to work in-place, its efficiency would be reduced.
+
+3>  If the dataset to be sorted is too big to fit in the memory all at 
+    once, using quicksort wouldn’t be possible since it is an internal 
+    sorting algorithm and requires random access to the whole dataset 
+    during the process of sorting. Merge sort, being an external sorting 
+    algorithm, would serve the purpose in this case.
